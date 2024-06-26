@@ -1,10 +1,36 @@
-## 2. Data
+# 2. Data
 
 A little extra to continue from last week
 
-### 2.0 Control Structures
+## 2.0 Data types and Control Structures
 
-#### strings manipulation, concatination, indexing, logic
+### Data Types
+
+Lists: Ordered, mutable collection of items. Items can be of different data types.
+```
+my_list = [1, 2, 3, 'apple', 'banana']
+```
+
+You can append to a list easily
+
+```
+my_list.append('hello')
+print(my_list)
+```
+
+
+
+Strings: Ordered, immutable sequence of characters.
+```
+my_string = "Hello, World!"
+```
+
+Tuples: Ordered, immutable collection of items. Items can be of different data types.
+```
+my_tuple = (1, 2, 3, 'apple', 'banana')
+```
+
+### string manipulation
 
 ```
 # Convert the string "hello" to uppercase
@@ -13,7 +39,7 @@ s_upper = s.upper()
 print(s_upper)
 ```
 
-#### if/else
+### if/else
 
 This is the cornerstone of basic programming logic. 
 When a certain condition or set of conditions is true, do something, otherwise, do something else
@@ -26,7 +52,7 @@ else:
     print('you can\'t drink!')
 ```
 
-#### for loops
+### for loops
 
 Another common feature of programs is the for loop.
 
@@ -62,7 +88,7 @@ for i in range(10, 0, -1):
 ```
 
 
-#### writing functions
+### writing functions
 
 Say we have the following code to multiply two given numbers
 
@@ -91,7 +117,7 @@ Exercise: complete this function (help here https://www.almanac.com/when-next-le
 
 Exercise: redo the ten green bottles exercise but for an arbitrary number of starting bottles
 
-### Data Formats
+## 2.1 Data Formats
 
 csv/excel
 
@@ -99,26 +125,26 @@ JSON
 
 txt
 
-### Data Sources (local tabular files, APIs, databases)
+## 2.2 Data Sources (local tabular files, APIs, databases)
 
 
-#### Local files
+### Local files
 
 Data stored on your computer or network drives.
 Examples: CSV, Excel, JSON, TXT files.
 
-#### Application Programming Interfaces (APIs) 
+### Application Programming Interfaces (APIs) 
 
 Allow you to access data from web services.
 Common in retrieving real-time data from websites and services.
 
 
-#### Databases
+### Databases
 
 Structured storage systems for large volumes of data.
 Examples: SQL databases (MySQL, PostgreSQL), NoSQL databases (MongoDB).
 
-### Data reading and manipulation 
+## 2.3 Data reading and manipulation 
 
 In python, 99% of your data reading and manipulation will be done using the pandas library.
 
@@ -132,7 +158,7 @@ import pandas as pd
 
 This means any time you want to use a function/class from the `pandas` library, you write `pd.function_name()` od `pd.Class()`
 
-SO, to load an excel file called `my_data.csv`, you write
+So, to load an excel file called `my_data.csv`, you write
 
 ```
 df = pd.read_csv('my_data.csv')
@@ -154,37 +180,37 @@ print(df)
 
 You can manipulate this data
 
-#### Select the 'Name' column
+### Select the 'Name' column
 ```
 names = df['Name']
 print(names)
 ```
 
-#### Filter rows where Age is greater than 30
+### Filter rows where Age is greater than 30
 ```
 filtered_df = df[df['Age'] > 30]
 print(filtered_df)
 ```
 
-#### Calculate the average Salary
+### Calculate the average Salary
 ```
 average_salary = df['Salary'].mean()
 print("Average Salary:", average_salary)
 ```
 
-#### Add a row with missing values
+### Add a row with missing values
 ```
 df_with_nan = df.append({'Name': 'Frank', 'Age': None, 'Salary': None}, ignore_index=True)
 print("DataFrame with NaN values:\n", df_with_nan)
 ```
 
-#### Drop rows with any missing values
+### Drop rows with any missing values
 ```
 cleaned_df = df_with_nan.dropna()
 print("DataFrame after dropping NaN values:\n", cleaned_df)
 ```
 
-#### Fill missing values with a specified value
+### Fill missing values with a specified value
 ```
 filled_df = df_with_nan.fillna({'Age': 0, 'Salary': 0})
 print("DataFrame after filling NaN values:\n", filled_df)
