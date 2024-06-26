@@ -6,7 +6,9 @@ A little extra to continue from last week
 
 ### Data Types
 
-Lists: Ordered, mutable collection of items. Items can be of different data types.
+#### Lists
+
+Ordered, mutable collection of items. Items can be of different data types.
 ```
 my_list = [1, 2, 3, 'apple', 'banana']
 ```
@@ -18,22 +20,30 @@ my_list.append('hello')
 print(my_list)
 ```
 
+And you can extract one element of the list
+```
+#python is zero-indexed, so the first item is item 0, second item is item 1, etc
+print(list[0])
+#last item is item -1, second last is -2, etc
+print(list[-1])
+```
 
 
-Strings: Ordered, immutable sequence of characters.
+#### Strings
+Ordered, immutable sequence of characters.
 ```
 my_string = "Hello, World!"
 ```
 
-Tuples: Ordered, immutable collection of items. Items can be of different data types.
+concatenate two strings together
 ```
-my_tuple = (1, 2, 3, 'apple', 'banana')
+firstname = 'john'
+surname = 'doe'
+print(firstname + ' ' + lastname)
 ```
 
-### string manipulation
-
 ```
-# Convert the string "hello" to uppercase
+# Convert a string to uppercase
 s = "hello"
 s_upper = s.upper()
 print(s_upper)
