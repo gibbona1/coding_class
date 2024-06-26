@@ -4,13 +4,92 @@ A little extra to continue from last week
 
 ### 2.0 Control Structures
 
-manipulation, concatination, indexing, logic
+#### strings manipulation, concatination, indexing, logic
 
-if/else
+```
+# Convert the string "hello" to uppercase
+s = "hello"
+s_upper = s.upper()
+print(s_upper)
+```
 
-for loops
+#### if/else
 
-writing functions
+This is the cornerstone of basic programming logic. 
+When a certain condition or set of conditions is true, do something, otherwise, do something else
+
+```
+age = 100
+if age >= 18:
+    print('you can drink')
+else:
+    print('you can\'t drink!')
+```
+
+#### for loops
+
+Another common feature of programs is the for loop.
+
+A for loop in Python is used to iterate over a sequence (such as a list, tuple, string, or range).
+
+It allows you to execute a block of code multiple times, once for each item in the sequence.
+
+```
+# Print each number in the list [10, 20, 30, 40, 50]
+numbers = [10, 20, 30, 40, 50]
+for num in numbers:
+    print(num)
+```
+
+```
+# Print each character in the string "Python"
+word = "Python"
+for char in word:
+    print(char)
+```
+
+Exercise: write a for loop that would print out the ten green bottle nursery rhyme (https://en.wikipedia.org/wiki/Ten_Green_Bottles)
+```
+for i in range(10, 0, -1):
+    print(f"{i} green bottles hanging on the wall,")
+    print(f"{i} green bottles hanging on the wall,")
+    print("And if one green bottle should accidentally fall,")
+    if i == 1:
+        print("There'll be no green bottles hanging on the wall.")
+    else:
+        print(f"There'll be {i-1} green bottles hanging on the wall.")
+    print()  # Print a blank line between verses
+```
+
+
+#### writing functions
+
+Say we have the following code to multiply two given numbers
+
+```
+# Multiply 7 by 8
+a = 7
+b = 8
+product = a * b
+print('The product is:', product)
+```
+
+What if we wanted a small function that would take in any two numbers we give it and return the sentence `The product is: x`
+
+```
+def multiply_nums(a, b):
+    product = a*b
+    return f'The product is: {product}'
+```
+
+Exercise: complete this function (help here https://www.almanac.com/when-next-leap-year)
+
+```def is_leap_year(year):
+    #return 'yes' if leap year, else 'no'
+    return ''
+```
+
+Exercise: redo the ten green bottles exercise but for an arbitrary number of starting bottles
 
 ### Data Formats
 
@@ -47,13 +126,17 @@ A library is just a collection of classes (e.g. DataFrames which store your data
 
 the common way to load this library is
 
-```import pandas as pd```
+```
+import pandas as pd
+```
 
-This means any time you want to use a function/class from the pandas library, you write `pd.function_name()` od `pd.Class()`
+This means any time you want to use a function/class from the `pandas` library, you write `pd.function_name()` od `pd.Class()`
 
 SO, to load an excel file called `my_data.csv`, you write
 
-```df = pd.read_csv('my_data.csv')```
+```
+df = pd.read_csv('my_data.csv')
+```
 
 the df object is a `pd.DataFrame`, it should look familiar enough to excel
 
