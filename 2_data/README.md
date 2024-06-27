@@ -6,6 +6,31 @@ A little extra to continue from last week
 
 ### Data Types
 
+#### Integers
+
+Whole numbers, positive or negative, without a fractional part.
+
+```
+my_int = 42
+```
+
+#### Floats
+
+Numbers that contain a decimal point, representing fractional values.
+
+```
+my_float = 3.14
+```
+
+
+#### Booleans
+
+Logical data type with two possible values: `True` or `False`.
+
+```
+my_bool = True
+```
+
 #### Lists
 
 Ordered, mutable collection of items. Items can be of different data types.
