@@ -122,3 +122,25 @@ for l in name:
         print(l*500)
     
 #print(['a']*5)
+
+
+#take in list, return two lists, one of positives and one of negatives
+
+int_list = [1,2,-3,10,15,-20,-100]
+def find_positive_negative(int_list):
+    "take in list, return two lists, one of positives and one of negatives"
+    pos_list = []
+    neg_list = []
+    for el in int_list:
+        if el >= 0:
+            pos_list.append(el)
+        else:
+            neg_list.append(el)
+    return pos_list, neg_list
+    
+print(find_positive_negative(int_list))
+
+pos_list = [el for el in int_list if el>=0]
+neg_list = [el for el in int_list if el<0]
+
+print((pos_list, neg_list))
