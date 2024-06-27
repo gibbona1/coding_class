@@ -109,3 +109,16 @@ def make_bottle_rhyhme(num_starting_bottles):
     return 
 
 make_bottle_rhyhme(1)
+
+
+name = [1,['blah'],3]
+
+for l in name:
+    if type(l) is str:
+        print(l+'1')
+    elif type(l) is list:
+        print(l)
+    else:
+        print(l*500)
+    
+#print(['a']*5)
