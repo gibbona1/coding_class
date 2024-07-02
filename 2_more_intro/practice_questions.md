@@ -5,8 +5,11 @@
 Write a function `make_line` that takes in two arguments: `word` (a string) and `n` (an integer)
 so that it returns the `word` repeated `n` times (and makes it into a kind of line).
 e.g. 
+
 `make_line('hello', 3)` should return `hellohellohello`
+
 `make_line('a', 10)` should return `aaaaaaaaaaa`
+
 As a bonus, check that `word` is a `str` and `n` is an `int`, and print an error if so.
 
 <details>
