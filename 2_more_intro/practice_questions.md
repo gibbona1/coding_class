@@ -60,7 +60,7 @@ As a bonus, ensure `initial` is just one letter, and make sure each `word` in th
 <details>
   <summary>Hint</summary>
   
-  `'A' + '.' = 'A.'`
+  `'A' + '.'` gives `'A.'`
 
   `'joe bloggs'.split(' ')` would give  `['joe', 'bloggs']`
   
