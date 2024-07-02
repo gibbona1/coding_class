@@ -48,9 +48,13 @@ As a bonus, check that `name` is a `str` and `n` is an `int` greater than zero.
 Write a function `add_initial` which takes a person's `name` (in the form `firstname surname`, separated by a space), and an `initial` (one letter/chaaracter)
 add an extra argument `add_dot`, which should be made `True` by default, that adds a full stop to the initial.
 e.g. 
+
 `add_initial('Samuel Jackson', 'L')` returns `Samuel L. Jackson`
+
 `add_initial('Vivica Fox', 'A')` returns `Vivica A. Fox`
+
 `add_initial('Michael Higgins', 'D', add_dot = False)` returns `Michael D Higgins`
+
 As a bonus, ensure `initial` is just one letter, and make sure each `word` in the final answer is capitalised.
 
 <details>
