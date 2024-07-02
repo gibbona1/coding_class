@@ -9,6 +9,16 @@ e.g.
 `make_line('a', 10)` should return `aaaaaaaaaaa`
 As a bonus, check that `word` is a `str` and `n` is an `int`, and print an error if so.
 
+<details>
+  <summary>Hint</summary>
+  
+  Example check for `n`: 
+  ```
+  if type(n) is str: 
+    print('oops, n is string!')
+    return
+  ```
+</details>
 
 ## Q2
 
@@ -21,6 +31,17 @@ Hello, John!
 ```
 As a bonus, check that `name` is a `str` and `n` is an `int` greater than zero.
 
+<details>
+  <summary>Hint</summary>
+  
+  `['blah']*3` would create `['blah', 'blah', 'blah']`
+  and `'\n'.join(['blah', 'blah', 'blah'])` will make the string
+  ```
+  blah
+  blah
+  blah
+  ```
+</details>
 
 ## Q3
 
@@ -32,3 +53,13 @@ e.g.
 `add_initial('Michael Higgins', 'D', add_dot = False)` returns `Michael D Higgins`
 As a bonus, ensure `initial` is just one letter, and make sure each `word` in the final answer is capitalised.
 
+<details>
+  <summary>Hint</summary>
+  
+  `'A' + '.' = 'A.'`
+
+  `'joe bloggs'.split(' ')` would give  `['joe', 'bloggs']`
+  
+  And if we have `my_list = ['joe', 'bloggs']`
+  then `my_list.insert(1, 'A')` updates `my_list` to `['joe', 'a', 'bloggs']` (it inserts `A` at index 1).
+</details>
