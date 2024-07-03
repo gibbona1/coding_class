@@ -70,3 +70,33 @@ As a bonus, ensure `initial` is just one letter, and make sure each `word` in th
   And if we have `my_list = ['joe', 'bloggs']`
   then `my_list.insert(1, 'A')` updates `my_list` to `['joe', 'a', 'bloggs']` (it inserts `A` at index 1).
 </details>
+
+## Q4
+
+Write a function `only_squares` which takes a list `a` of integers and returns a list of those elements in `a` that are perfect squares
+e.g. 
+
+`only_squares([1, 2, 4, 6, 9])` returns `[1, 4, 9]`
+
+`only_squares([2, 5])` returns `[]`
+
+As a bonus, use list comprehension (see week2.py or hint if you don't remember)
+
+<details>
+  <summary>Hint</summary>
+  
+  The following classic for loop
+  ```
+  a = [1, 2, 3]
+  res = []
+  for i in a:
+    res.append(i+1)
+  print(res)
+  ```
+
+  is the same as using list comprehension (usually much cleaner)
+
+  ```
+  print([i+1 for i in a])
+  ```
+</details>
