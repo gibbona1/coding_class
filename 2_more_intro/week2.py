@@ -140,6 +140,7 @@ def find_positive_negative(int_list):
     
 print(find_positive_negative(int_list))
 
+#list comprehension, efficient one line for loops (usually to filter or transform lists)
 pos_list = [el for el in int_list if el>=0]
 neg_list = [el for el in int_list if el<0]
 
