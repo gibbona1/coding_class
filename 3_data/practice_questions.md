@@ -46,7 +46,7 @@ Answer the following questions:
 
 - What is the average rating of everything in the data?
 - What about the average for TV Shows?
-- What about just films directed by Cheistopher Nolan?
+- What about just films directed by Christopher Nolan?
 
 ## Q5
 
@@ -61,7 +61,7 @@ Answer the following questions:
 
 ## Q6
 
-- How many movies rated in 2021? (between 01/01/2021 and 31/12/2021 inclusive)
+- How many movies rated in 2019? (between `2019-01-01` and `2019-12-31` inclusive)
 
 <details>
   <summary>Hint</summary>
