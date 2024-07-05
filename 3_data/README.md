@@ -2,11 +2,39 @@
 
 ## 3.1 Data Formats
 
-csv/excel
+CSV/Text often look identical
+
+```
+Age,Salary,Department
+23,50000,HR
+45,80000,Finance
+31,60000,IT
+35,65000,IT
+28,55000,HR
+```
+
+but `csv`s are comma separated, `txt` files can separate values with antything
+
+```
+Age;Salary;Department
+23;50000;HR
+45;80000;Finance
+31;60000;IT
+35;65000;IT
+28;55000;HR
+```
 
 JSON
 
-txt
+```
+[
+    {"Age": 23, "Salary": 50000, "Department": "HR"},
+    {"Age": 45, "Salary": 80000, "Department": "Finance"},
+    {"Age": 31, "Salary": 60000, "Department": "IT"},
+    {"Age": 35, "Salary": 65000, "Department": "IT"},
+    {"Age": 28, "Salary": 55000, "Department": "HR"}
+]
+```
 
 ## 3.2 Data Sources (local tabular files, APIs, databases)
 
