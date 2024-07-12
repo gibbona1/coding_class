@@ -147,7 +147,7 @@ transition: slide-left
 <div class="flex justify-around items-center h-full">
   <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-4 rounded shadow-md">
-      <p>Fake Filesystem</p>
+      <p>Filesystem</p>
       <ul>
         <li>file1.txt</li>
         <li>file2.txt</li>
@@ -171,7 +171,7 @@ transition: slide-left
 <div class="flex justify-around items-center h-full">
   <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-4 rounded shadow-md">
-      <p>Fake Filesystem</p>
+      <p>Filesystem</p>
       <ul>
         <li>file1.txt</li>
         <li>file2.txt</li>
@@ -188,7 +188,7 @@ transition: slide-left
 
 <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
   <p>Commit</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Arrow_right.svg/2560px-Arrow_right.svg.png" alt="Commit" class="w-32">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Map_arrow_black_e.svg" alt="Commit" class="w-32">
 </div>
 
 
@@ -201,7 +201,7 @@ transition: slide-left
 <div class="flex justify-around items-center h-full">
   <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-4 rounded shadow-md">
-      <p>Fake Filesystem</p>
+      <p>Filesystem</p>
       <ul>
         <li>file1.txt</li>
         <li>file2.txt</li>
@@ -231,7 +231,7 @@ transition: slide-left
 <div class="flex justify-around items-center h-full">
   <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-4 rounded shadow-md">
-      <p>Fake Filesystem</p>
+      <p>Filesystem</p>
       <ul>
         <li>file1.txt</li>
         <li>file2.txt</li>
@@ -251,9 +251,9 @@ transition: slide-left
   </div>
 </div>
 
-<div class="absolute left-1/3 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+<div class="absolute left-33/50 top-17/32 transform -translate-x-1/2 -translate-y-1/2">
   <p>Push</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Arrow_right.svg/2560px-Arrow_right.svg.png" alt="Push" class="w-32">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Map_arrow_black_e.svg" alt="Push" class="w-32">
 </div>
 
 ---
@@ -265,7 +265,7 @@ transition: slide-left
 <div class="flex justify-around items-center h-full">
   <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-4 rounded shadow-md">
-      <p>Fake Filesystem</p>
+      <p>Filesystem</p>
       <ul>
         <li>file1.txt</li>
         <li>file2.txt</li>
@@ -285,9 +285,10 @@ transition: slide-left
   </div>
 </div>
 
-<div class="absolute left-2/3 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-  <p>Pull</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Arrow_right.svg/2560px-Arrow_right.svg.png" alt="Pull" class="w-32 transform rotate-180">
+<div class="absolute left-32/50 top-25/32 transform -translate-x-30 -translate-y-1/2">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Map_arrow_black_w.svg" alt="Pull" class="w-32"
+  style="filter: hue-rotate(0deg) saturate(100%) brightness(0) invert(28%) sepia(100%) saturate(7498%) hue-rotate(341deg) brightness(93%) contrast(97%)">
+  <p style="text-align: right; color: red">Pull</p>
 </div>
 
 ---
@@ -299,7 +300,7 @@ transition: slide-left
 <div class="flex justify-around items-center h-full">
   <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-4 rounded shadow-md">
-      <p>Fake Filesystem</p>
+      <p>Filesystem</p>
       <ul>
         <li>file1.txt</li>
         <li>file2.txt</li>
@@ -319,13 +320,19 @@ transition: slide-left
   </div>
 </div>
 
-<div class="absolute left-1/3 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+<div class="absolute left-19/50 top-17/32 transform -translate-x-1/2 -translate-y-1/2">
+  <p>Commit</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Map_arrow_black_e.svg" alt="Push" class="w-32">
+</div>
+<div class="absolute left-34/50 top-17/32 transform -translate-x-1/2 -translate-y-1/2">
   <p>Push</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Arrow_right.svg/2560px-Arrow_right.svg.png" alt="Push" class="w-32">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Map_arrow_black_e.svg" alt="Push" class="w-32">
 </div>
-<div class="absolute left-2/3 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-  <p>Pull</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Arrow_right.svg/2560px-Arrow_right.svg.png" alt="Pull" class="w-32 transform rotate-180">
+
+<div class="absolute left-32/50 top-25/32 transform -translate-x-30 -translate-y-1/2">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Map_arrow_black_w.svg" alt="Pull" class="w-32"
+  style="filter: hue-rotate(0deg) saturate(100%) brightness(0) invert(28%) sepia(100%) saturate(7498%) hue-rotate(341deg) brightness(93%) contrast(97%)">
+  <p style="text-align: right; color: red">Pull</p>
 </div>
 
 
